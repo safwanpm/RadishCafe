@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nexa:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation for spinning effect */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Smooth scrolling for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Root color variables and background */
+:root {
+  /* --background: url('/images/body-bg.jpg');  */
+  --foreground: #171717;
+}
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: url('/images/body-bg.jpg'); /* Optional: Different background for dark mode */
+    --foreground: #ededed;
+  }
+}
+
+/* Body styles with Nexa font family */
+body {
+  overflow-x: hidden;
+  color: var(--foreground);
+  background-image: var(--background);
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  font-family: var(--font-schulvokaldotless), 'Nexa', Arial, Helvetica, sans-serif; /* Updated to use Schulvokaldotless */
+   /* font-family: var(--font-kelvetica), 'Nexa', Arial, Helvetica, sans-serif;  */
+}
+
+
+/* Custom utility class for balanced text */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
