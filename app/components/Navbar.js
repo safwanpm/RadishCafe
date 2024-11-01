@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,11 @@ export default function Navbar() {
     { name: "CONTACT", href: "/contact" },
   ];
 
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  
   return (
-    <nav className="w-full bg-blue ">
+    <nav className={`w-full ${isHomePage ? "bg-blue" : "bg-white"}`}>
       <div className="py-10 lg:px-24 sm:px-6 mx-4 lg:mx-8">
         <div className="flex justify-between items-center h-12">
           {/* Logo */}
@@ -29,7 +33,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-8 " data-aos="fade-down">
             {navLinks.map(({ name, href }) => (
-              <a key={name} href={href} className="text-white hover:text-yellow-500">
+              <a key={name} href={href} className={` ${isHomePage ? "text-white" : "text-black"} hover:text-yellow-500`}>
                 {name}
               </a>
             ))}
@@ -45,14 +49,14 @@ export default function Navbar() {
           >
             Enquiry
           </a> */}
-          <a className="text-white">
+          <a className=" hidden md:block text-white">
             abc
           </a>
 
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-800 focus:outline-none"
+            className={`md:hidden ${isHomePage ? "text-white" : "text-black"} focus:outline-none`}
             data-aos="fade-down"
           >
             {isOpen ? (
@@ -82,15 +86,16 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden text-center px-4 py-2 space-y-4 flex flex-col" data-aos="fade-down">
+        <div className={`md:hidden text-center px-4 py-2 space-y-4 flex flex-col  ${isHomePage ? "text-white" : "text-black"}`}  data-aos="fade-down">
           {navLinks.map(({ name, href }) => (
-            <a key={name} href={href} className="text-gray-800 hover:text-blue-600">
+            <a key={name} href={href} className={`${isHomePage ? "text-white" : "text-black"} hover:text-blue-600`}>
               {name}
             </a>
           ))}
           <a
             href="#"
-            className="border-2 border-orangecolor text-orangecolor text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 md:py-2 px-4 sm:px-6 md:px-4 rounded-3xl hover:bg-gray-50 transition"
+            className={`border-2 ${isHomePage ? "border-white text-white ": "text-black border-blue"}  text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 
+            md:py-2 px-4 sm:px-6 md:px-4 rounded-3xl hover:bg-gray-50 transition`}
           >
             Enquiry
           </a>

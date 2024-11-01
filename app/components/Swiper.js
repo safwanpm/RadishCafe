@@ -18,9 +18,9 @@ const slides = [
 
 export default function SwiperComponent() {
   return (
-    <section className="relative px-4 py-16 lg:py-32 bg-white text-center">
-      <h2 className="text-2xl md:text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
-        Our Popular <span className="text-blue">Dishes</span>
+    <section className="relative px-4 py-16 lg:py-32 bg-blue text-center h-full md:h-screen">
+      <h2 className="text-2xl md:text-4xl font-bold mb-6  text-black inline-block pb-2" data-aos="fade-down">
+        Our Popular <span className="text-white ">Dishes</span>
         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-gray-300 mt-2"></span>
       </h2>
 
@@ -61,7 +61,7 @@ export default function SwiperComponent() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-blue  shadow-lg rounded-xl text-center px-4 my-8">
+         <div className='bg-white bg-opacity-30 backdrop-blur-lg shadow-lg rounded-xl text-center px-4 my-8 mt-4 md:mt-20'>
               <div className="flex flex-col items-center justify-center py-4 lg:py-12">
                 <img src={slide.img} alt={slide.alt} className="swiper-img rounded-lg h-20 md:h-44 w-28 md:w-44" loading="lazy" />
                 <h3 className="mt-4 text-xs md:text-xl font-bold text-white">{slide.name}</h3>
