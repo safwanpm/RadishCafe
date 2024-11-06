@@ -10,6 +10,7 @@ import Swipercomponent from "./components/Swiper";
 import Categoryswiper from "./components/Categoryswiper";
 import TestimonialSection from "./components/Testimonial";
 import SwiperDrinks from "./components/SwiperDrinks";
+import Sample from "./components/Sample";
 
 
 export default function Home() {
@@ -94,14 +95,14 @@ export default function Home() {
             {/* Image section */}
             <div
               className="relative w-full lg:w-1/2  lg:mt-0 flex justify-center"
-              
+
               data-aos-delay="200"
             >
               {/* Gray Circle Background */}
               {/* <div data-aos="zoom-out" className="absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-28"></div> */}
 
               {/* Image */}
-              <img src="/images/friedbg.png" alt="Top Products" data-aos="slide-up"className="relative lg:w-5/5 h-auto" />
+              <img src="/images/friedbg.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-5/5 h-auto" />
             </div>
 
           </div>
@@ -117,7 +118,7 @@ export default function Home() {
         </secction>
 
 
-
+{/* <Sample/> */}
 
         {/*welcome */}
 
@@ -134,15 +135,16 @@ export default function Home() {
             className="absolute top-0 right-10 w-24 lg:w-64"
           /> */}
 
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center ">
             {/* Left Section: Image */}
             <div className="w-full md:w-1/2 mb-10 md:mb-0 lg:pr-10" data-aos="zoom-in" data-aos-duration="500">
               <img
-                src="/images/gridimage2.png"
+                src="/images/pizza.png"
                 alt="image"
-                className="w-full md:w-4/5 rounded-lg"
+                className="w-3/5 md:w-5/5 rounded-lg mx-auto"
               />
             </div>
+
 
             {/* Right Section: Content */}
             <div className="w-full h-full md:w-1/2 lg:pr-20 text-black" data-aos="fade-up">
@@ -163,7 +165,7 @@ export default function Home() {
                 <button
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  className="relative  rounded-full bg-blue isolation-auto z-10 border-2 border-gray-50
+                  className="relative  bg-blue isolation-auto z-10 border-2 border-gray-50
                                          before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white
                                           before:-right-full before:hover:right-0 before:rounded-full before:bg-orange-500 before:-z-10
                                            before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700

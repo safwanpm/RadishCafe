@@ -1,263 +1,49 @@
-'use client';
-import { useState, useEffect } from "react";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import React from 'react'
 
-export default function Home() {
-  const [showButton, setShowButton] = useState(false);
-
-  // Show button when page is scrolled beyond 300px
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Scroll to top when button is clicked
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+function Sample() {
   return (
-    <>
-      <div className="relative">
-        <Navbar></Navbar>
-
-        {/* herosection */}
-
-
-        <div className=" py-4 lg:py-12  mt-2  px-4 md:px-8">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-
-            {/* Left Decorative Image */}
-            <img
-              src="/images/left 1.png"
-              alt="Spoon"
-              className="absolute top-16 lg:top-18 left-0 w-24 h-auto lg:w-48 lg:h-auto"
-            />
-
-            {/* Right Decorative Image */}
-            <img
-              src="/images/right 1.png"
-              alt="Tomato"
-              className="absolute top-24 right-0 w-24 h-auto lg:w-48 lg:h-auto"
-            />
-
-            {/* Left Side */}
-            <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="200">
-              <h1
-                className="ms-12 lg:ms-16 text-4xl md:text-5xl lg:text-6xl font-extrabold text-textcolor leading-tight mb-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                Take a taste <br />
-                Come join Us.
-              </h1>
-              <p
-                className="text-gray-600 text-lg md:text-xl mb-8 ms-12 lg:ms-16"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                "Bringing you the finest flavors, crafted from the world’s best ingredients!"
-              </p>
-              <div className="ms-12 lg:ms-16 flex gap-4" data-aos="fade-up" data-aos-delay="500">
-                <a
-                  href="tel:+971526346199"
-                  className="bg-blue text-white text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-16 rounded-full hover:bg-background hover:text-textcolor border-2 hover:border-textcolor transition"
-                >
-                  Explore Now
-                </a>
-                {/* <a
-                  href="/about"
-                  className="bg-white border-2 border-textcolor text-textcolor text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-full hover:bg-gray-100 transition"
-                >
-                  Learn more
-                </a> */}
-              </div>
-            </div>
-
-            {/* Right Side */}
-            <div
-              className="w-lg:w-1/2 mt-8 lg:mt-0 flex justify-center"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
-              <img src="/images/item1.png" alt="Top Products" className="w-5/5 h-auto" />
-            </div>
-          </div>
-        </div>
-
-
-
-
-        {/* What other say */}
-
-
-
-
-
-
-        <div
-          className="bg relative text-blue py-16 px-6 md:px-16 lg:px-32"
-          id="about"
+    <div><>
+    
+    <div className="flex flex-col gap-5 group mx-2 cursor-pointer">
+      <div className="bg-gradient-to-r w-44 sm:w-52 aspect-square items-center justify-center flex from-gray-100 to-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="group-hover:ease-in-out transition duration-700 group-hover:duration-1000 cursor-pointer object-center object-cover group-hover:scale-110 sm:group-hover:scale-150 w-16 sm:w-28 aspect-square rotate-0 group-hover:-rotate-[360deg] group-hover:stroke-lime-600 fill-lime-600 group-hover:-translate-y-12 group-hover:-skew-y-12 group-hover:skew-x-12"
+          fill="currentColor"
+          viewBox="0 0 16 16"
         >
-
-
-          {/* Left Decorative Image */}
-          {/* <img
-            src="/images/left 1.png"
-            alt="Decorative Image Left"
-            className="absolute top-0 left-0 w-24 h-auto lg:w-48 lg:h-auto"
-          /> */}
-
-          {/* Right Decorative Image */}
-          <img
-            src="/images/right 2.png"
-            alt="Decorative Image Right"
-            className="absolute top-0 right-10 w-24 h-auto lg:w-56 lg:h-auto"
-          />
-          <div className="flex flex-col md:flex-row items-center">
-            <div
-              className="w-full md:w-1/2 mb-10 md:mb-0 pr-10"
-              data-aos="zoom-in"
-              data-aos-duration="500"
-            >
-              <img
-                src="/images/item  5.png"
-                alt="Zahrat Al Reef Shopfront"
-                className="w-4/5 rounded-lg "
-              />
-            </div>
-            <div
-              className="w-full h-full md:w-1/2 lg:pr-20"
-              data-aos="fade-up"
-            >
-              <h1 className="text-4xl font-bold mb-4" data-aos="fade-up">
-                Welcome to {" "}
-                <span className="text-orange-500">Radish</span>{" "}
-              </h1>
-
-              <p
-                className="text-lg mb-4"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                At Radish, we take pride in serving an extensive menu that caters to diverse tastes.
-                From freshly brewed coffee to gourmet meals, our offerings include a wide array of
-                delicacies made from high-quality ingredients.
-              </p>
-              <p
-                className="text-lg mb-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                Whether you're looking for a quick bite or a relaxing
-                meal with friends, Radish Resto Cafe is your one-stop place
-                 for great food, warm hospitality, and a cozy ambiance
-              </p>
-              <a href="/about">
-                <>
-                  <button
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                    className="relative  rounded-full bg-blue isolation-auto z-10 border-2 border-gray-50
-                                         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white
-                                          before:-right-full before:hover:right-0 before:rounded-full before:bg-orange-500 before:-z-10
-                                           before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
-                                            inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-white
-                                              shadow-sm gap-x-2 hover:bg-gray-50
-                                              disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    Read more
-                  </button>
-                </>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-        {/* About */}
-
-
-        <section className="flex flex-col items-center justify-center text-center px-4 py-16 lg:py-32 bg">
-          <h2 className="relative text-4xl font-bold mb-6 text-black inline-block">
-            About Us
-            {/* Underline */}
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-orange-500 mt-2"></span>
-          </h2>
-          {/* Image */}
-          <div className="mb-8">
-            <img
-              src="./images/about-img.jpg"
-              alt="Food Illustration"
-              className="w-full max-w-md"
-            />
-          </div>
-
-          {/* Description */}
-          <div className="max-w-2xl">
-            <p className="text-gray-600 mb-6">
-              Established in the heart of Taliparamba, Kannur,
-              Radish Resto Cafe has been a cherished spot for
-              food enthusiasts who appreciate a perfect blend of
-              authentic flavors and modern culinary techniques.
-              With years of experience in delivering exceptional
-              dining experiences, Radish is a go-to destination for
-              locals and visitors alike.
-            </p>
-
-            <button
-              data-aos="fade-up"
-              data-aos-delay="400"
-              className="relative  rounded-full bg-blue isolation-auto z-10 border-2 border-gray-50
-                                         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white
-                                          before:-right-full before:hover:right-0 before:rounded-full before:bg-orange-500 before:-z-10
-                                           before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
-                                            inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-white
-                                              shadow-sm gap-x-2 hover:bg-gray-50
-                                              disabled:opacity-50 disabled:pointer-events-none"
-            >
-              →
-            </button>
-
-
-
-          </div>
-        </section>
-
-
+          <path d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
+        </svg>
       </div>
-
-
-
-      <button
-
-        onClick={scrollToTop}
-
-        className=" fixed bottom-8 right-8   rounded-full bg-blue isolation-auto z-10 border-2 border-gray-50
-                                         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white
-                                          before:-right-full before:hover:right-0 before:rounded-full before:bg-orange-500 before:-z-10
-                                           before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
-                                            inline-flex items-center justify-center px-4 py-4 text-xl font-extrabold text-white
-                                              shadow-sm gap-x-2 hover:bg-gray-50
-                                              disabled:opacity-50 disabled:pointer-events-none"
-      >
-        ↑
-      </button>
-
-      <Footer />
-    </>
-  );
+      <div className="flex flex-row place-items-center place-content-between">
+        <div className="flex flex-col gap-1">
+          <p className="font-semibold text-lg sm:text-xl relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-500 cursor-pointer w-full after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-lime-600 dark:after:bg-lime-500 text-gray-600 dark:text-lime-500">
+            3D Animation
+          </p>
+          <p className="text-sm text-gray-500">Design, Dimension</p>
+        </div>
+        <div className="-rotate-45 cursor-pointer">
+          <svg
+            clipRule="evenodd"
+            fillRule="evenodd"
+            strokeLinejoin="round"
+            strokeMiterlimit={2}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-gray-600 font-semibold text-lg sm:text-xl transition-all duration-300 group-hover:transition-all group-hover:duration-300 group-hover:text-gray-200 fill-lime-600 group-hover:bg-lime-600 group-hover:fill-white group-hover:rotate-45 p-px rounded-full w-10 group-hover:rounded-full group-hover:animate-pulse"
+          >
+            <path
+              d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+              fillRule="nonzero"
+            />
+          </svg>
+        </div>
+        &nbsp;&nbsp;
+      </div>
+    </div>
+  </>
+  </div>
+  )
 }
+
+export default Sample
