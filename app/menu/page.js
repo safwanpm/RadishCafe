@@ -11,10 +11,10 @@ const Menu = () => {
 
   const menuItems = [
     { id: 1, name: 'Pizza', price: '$20', category: 'Dishes', img: '/images/f6.png' },
-    { id: 2, name: 'Burger', price: '$15', category: 'Dishes', img: '/images/f2.png' },
-    { id: 3, name: 'Pasta', price: '$17', category: 'Dishes', img: '/images/f9.png' },
+    { id: 2, name: 'Burger', price: '$15', category: 'Dishes', img: '/images/f7.png' },
+    { id: 3, name: 'Pasta', price: '$17', category: 'Dishes', img: '/images/pasta1.png' },
     { id: 4, name: 'Fried Chicken', price: '$12', category: 'Dishes', img: '/images/fried.png' },
-    { id: 5, name: 'Crispy Fries', price: '$8', category: 'Dishes', img: '/images/f5.png' },
+    { id: 5, name: 'Crispy Fries', price: '$8', category: 'Dishes', img: '/images/french-fries.png' },
     { id: 6, name: 'Steak', price: '$8', category: 'Dishes', img: '/images/steak.png' },
     { id: 7, name: 'Healthy Salads', price: '$8', category: 'Dishes', img: '/images/salad.png' },
     { id: 8, name: 'Momos', price: '$8', category: 'Dishes', img: '/images/momo.png' },
@@ -65,7 +65,7 @@ const Menu = () => {
                   alt={item.name}
                   className="p-8 group-hover:ease-in-out  h-40 transition duration-700 
                   group-hover:duration-1000 cursor-pointer object-center object-cover 
-                  group-hover:scale-110 sm:group-hover:scale-150 w-40 md:w-56 md:max-w-72 md:h-56  aspect-square
+                  group-hover:scale-110 sm:group-hover:scale-150 w-40 md:w-full md:max-w-72 md:h-full  aspect-square
                    rotate-0 group-hover group-hover:stroke-lime-600 fill-lime-600 
                    group-hover:-translate-y-12 group-hover:-skew-y-12 group-hover:skew-x-12"
                   />

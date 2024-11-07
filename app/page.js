@@ -53,60 +53,83 @@ export default function Home() {
         {/* Hero Section */}
 
 
-        <div className=" py-4 lg:py-12  px-4 md:px-8 bg-blue text-white">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-            {/* <img
-              src="/images/left 1.png"
-              alt="Spoon"
-              className="absolute top-16 lg:top-18 left-0 w-24 h-auto lg:w-48 lg:h-auto"
-              data-aos="fade-right"
-            />
-            <img
-              src="/images/right 1.png"
-              alt="Tomato"
-              className="absolute top-24 right-0 w-24 h-auto lg:w-48 lg:h-auto"
-              data-aos="fade-left"
-            /> */}
-            {/* Text Content */}
-            <div className="lg:w-1/2 ms-12 lg:ms-16" data-aos="fade-right" data-aos-delay="200">
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                Where Every <br /> Meal is an Experience
-              </h1>
-              <p
-                className="text-white text-lg md:text-xl mb-8"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                "Bringing you the finest flavors, crafted from the world’s best ingredients!"
-              </p>
-              {/* <div className="flex gap-4" data-aos="fade-up" data-aos-delay="500">
-                <a
-                  href="tel:+971526346199"
-                  className="bg-blue text-white text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-16 rounded-full hover:bg-background hover:text-textcolor border-2 hover:border-textcolor transition"
-                >
-                  Explore Now
-                </a>
-              </div> */}
-            </div>
-            {/* Image section */}
-            <div
-              className="relative w-full lg:w-1/2  lg:mt-0 flex justify-center"
-
-              data-aos-delay="200"
+        <div>
+      {/* Hero Section */}
+      <div className="py-4 lg:py-12 px-4 md:px-8 bg-blue text-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+          {/* Text Content */}
+          <div className="lg:w-1/2 ms-12 lg:ms-16" data-aos="fade-right" data-aos-delay="200">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
-              {/* Gray Circle Background */}
-              {/* <div data-aos="zoom-out" className="absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-28"></div> */}
+              Where Every <br /> Meal is an Experience
+            </h1>
+            <p
+              className="text-white text-lg md:text-xl mb-8"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              "Bringing you the finest flavors, crafted from the world’s best ingredients!"
+            </p>
+          </div>
 
-              {/* Image */}
-              <img src="/images/friedbg.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-5/5 h-auto" />
-            </div>
-
+          {/* Image Section */}
+          <div
+            className="relative w-full lg:w-1/2 lg:mt-0 flex justify-center"
+            data-aos-delay="200"
+          >
+            <img src="/images/friedbg.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-full h-auto" />
           </div>
         </div>
+      </div>
+
+      {/* Featured Dishes Section */}
+      <div className="bg-blue text-white py-8 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            Featured Dishes
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Dish Card 1 */}
+            <div className="bg-opacity-5  text-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Dish 1"
+                className="rounded-full w-24 h-24 mx-auto"
+              />
+              <div className="text-orange-500 mt-2">★★★★★</div>
+              <p className="mt-2 text-lg font-semibold">$20</p>
+              <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p>
+            </div>
+            {/* Dish Card 2 */}
+            <div className="bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Dish 2"
+                className="rounded-full w-24 h-24 mx-auto"
+              />
+              <div className="text-orange-500 mt-2">★★★★★</div>
+              <p className="mt-2 text-lg font-semibold">$25</p>
+              <p className="text-sm text-gray-600">Spaghetti Carbonara with Bacon</p>
+            </div>
+            {/* Dish Card 3 */}
+            <div className="bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Dish 3"
+                className="rounded-full w-24 h-24 mx-auto"
+              />
+              <div className="text-orange-500 mt-2">★★★★★</div>
+              <p className="mt-2 text-lg font-semibold">$35</p>
+              <p className="text-sm text-gray-600">Honey Sauce Roasted Chicken</p>
+            </div>
+            {/* Additional Dish Cards can be added here */}
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -118,7 +141,6 @@ export default function Home() {
         </secction>
 
 
-{/* <Sample/> */}
 
         {/*welcome */}
 
@@ -135,8 +157,10 @@ export default function Home() {
             className="absolute top-0 right-10 w-24 lg:w-64"
           /> */}
 
-          <div className="flex flex-col md:flex-row items-center ">
+          <div className=" relative flex flex-col md:flex-row items-center ">
             {/* Left Section: Image */}
+              <div data-aos="zoom-out" className="absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-28"></div>
+
             <div className="w-full md:w-1/2 mb-10 md:mb-0 lg:pr-10" data-aos="zoom-in" data-aos-duration="500">
               <img
                 src="/images/pizza.png"
@@ -186,8 +210,9 @@ export default function Home() {
         {/* category swiper */}
 
         <Categoryswiper />
+        <Sample/>
 
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
 
         {/* About Section */}
         <section className="relative flex flex-col items-center justify-center text-center px-4 py-16 lg:py-16 bg  shadow-lg">

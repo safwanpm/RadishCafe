@@ -15,6 +15,8 @@ module.exports = {
         // 'textcolor': '#FFFFFF',
         'textcolor': '#1A2634',
         'blue':'#047037',
+        'white':'#FDFEFF',
+        'black':'#202124',
         // 'blue': '#3b5d50',
         'orangecolor': '#FFA500', // Use a valid hex code or a named color
         'yellow': '#FFD700',
