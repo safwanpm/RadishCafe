@@ -15,38 +15,43 @@ function Sample() {
   {/* Grid Container */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:mt-10 w-full max-w-4xl">
     {/* Testimonial Card 1 */}
-    <div className="relative p-8 bg-gray-100 rounded-lg shadow-lg">
+    <div 
+    data-aos="fade-right"
+    className="relative p-8 bg-gray-100 rounded-lg shadow-lg">
       <div className="absolute -top-4 left-4 text-5xl text-blue font-bold">“</div>
       <div className="text-center">
         <p className="text-lg text-gray-600">
-          "We were looking for a platform that was essentially a CRM for influencer management that also allowed us to aggregate our campaign analytics and access the insights we need to properly evaluate influencers."
+          "Radish  is the perfect spot for a quick coffee or a hearty meal. The ambiance is warm, and the staff make you feel like family. I’ll be back for sure!"
         </p>
-        <p className="mt-4 font-semibold">EMILY NORAAN</p>
-        <p className="text-sm text-gray-500">FOUNDER AND CEO OF MAHAMERU</p>
+        <p className="mt-4 font-semibold">ANNA K.</p>
+        <p className="text-sm text-gray-500">REGULAR CUSTOMER</p>
       </div>
       <div className="absolute -bottom-4 right-4 text-5xl text-blue font-bold">”</div>
     </div>
 
     {/* Testimonial Card 2 */}
-    <div className="relative p-8 bg-gray-100 rounded-lg shadow-lg">
+    <div
+    data-aos="fade-left"
+    className="relative p-8 bg-gray-100 rounded-lg shadow-lg">
       <div className="absolute -top-4 left-4 text-5xl text-blue font-bold">“</div>
       <div className="text-center">
         <p className="text-lg text-gray-600">
-          "This platform has been a game-changer, streamlining our workflow and helping us focus on building lasting partnerships with influencers."
+          "The food at Radish is simply amazing! Every dish feels carefully prepared with fresh ingredients. It’s my favorite café in town!"
         </p>
-        <p className="mt-4 font-semibold">JAMES SMITH</p>
-        <p className="text-sm text-gray-500">MARKETING DIRECTOR AT INFLUENCE HUB</p>
+        <p className="mt-4 font-semibold">MARK T.</p>
+        <p className="text-sm text-gray-500">FOOD CRITIC</p>
       </div>
       <div className="absolute -bottom-4 right-4 text-5xl text-blue font-bold">”</div>
     </div>
   </div>
 
-  {/* Arrows (optional for carousel feature) */}
+  {/* Optional Carousel Arrows */}
   {/* <div className="flex space-x-4 mt-6">
     <button className="p-2 bg-orange-500 text-white rounded-full">←</button>
     <button className="p-2 bg-orange-500 text-white rounded-full">→</button>
   </div> */}
 </div>
+
 
 
   

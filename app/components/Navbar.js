@@ -49,7 +49,7 @@ export default function Navbar() {
           {/* Enquiry Button (Desktop) */}
           <a
           data-aos="fade-down"
-            href="#"
+            href="tel:+917034558800"
             className={`hidden md:flex border ${isHomePage ? "border-white text-white" : "border-blue rext-blue"} 
             text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 md:py-2 px-4 
             sm:px-6 md:px-8  hover:bg-white hover:text-blue transition"
@@ -101,7 +101,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#"
+            href="tel:+917034558800"
             className={`border-2 ${isHomePage ? "border-white text-white " : "text-black border-blue"}  text-sm sm:text-base md:text-lg font-semibold py-2 sm:py-3 
             md:py-2 px-4 sm:px-6 md:px-4 rounded-3xl hover:bg-gray-50 transition`}
           >

@@ -81,9 +81,9 @@ const Menu = () => {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-orange-500 border-2 border-gray-50 shadow-lg 
+        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-white border-2 border-gray-50 shadow-lg 
       inline-flex items-center justify-center w-12 h-12 text-white text-2xl font-bold transition-transform duration-300
-      transform hover:scale-110 hover:shadow-2xl hover:text-white"
+      transform hover:scale-110 hover:shadow-2xl hover:text-blue hover:boder-2 hover:border-blue"
         aria-label="Scroll to top"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

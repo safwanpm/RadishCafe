@@ -48,86 +48,90 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <Navbar />
         {/* Hero Section */}
 
 
         <div>
-      {/* Hero Section */}
-      <div className="py-4 lg:py-6 px-4 md:px-8 bg-blue text-white">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-          {/* Text Content */}
-          <div className="lg:w-1/2 ms-12 lg:ms-16" data-aos="fade-right" data-aos-delay="200">
-            <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              Where Every <br /> Meal is an Experience
-            </h1>
-            <p
-              className="text-white text-lg md:text-xl mb-8"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              "Bringing you the finest flavors, crafted from the world’s best ingredients!"
-            </p>
+          {/* Hero Section */}
+          <div className="py-4 lg:py-6 px-4 md:px-8 bg-blue text-white">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+              {/* Text Content */}
+              <div className="lg:w-1/2 ms-12 lg:ms-16" data-aos="fade-right" data-aos-delay="200">
+                <h1
+                  className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  Where Every <br /> Meal is an Experience
+                </h1>
+                <p
+                  className="text-white text-lg md:text-xl mb-8"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  "Bringing you the finest flavors, crafted from the world’s best ingredients!"
+                </p>
+              </div>
+
+              {/* Image Section */}
+              <div
+                className="relative w-full lg:w-1/2 lg:mt-0 flex justify-center"
+                data-aos-delay="200"
+              >
+                <img src="/images/pizza-heo.png" alt="Top Products" data-aos="slide-up" className="  relative w-3/4 md:w-4/4 h-auto" />
+              </div>
+            </div>
           </div>
 
-          {/* Image Section */}
-          <div
-            className="relative w-full lg:w-1/2 lg:mt-0 flex justify-center"
-            data-aos-delay="200"
-          >
-            <img src="/images/pizza-heo.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-4/4 h-auto" />
-          </div>
-        </div>
-      </div>
+          {/* Featured Dishes Section */}
+          <div className="hidden md:block bg-blue text-white px-4 md:px-8 -mt-20">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Dish Card 1 */}
+                <div
+                  data-aos="fade-right"
+                  className="text-white p-4 rounded-lg text-center bg-opacity-30 backdrop-blur-lg transition-transform transform hover:scale-105 hover:bg-opacity-50"
+                >
+                  <img
+                    src="/images/burgerbg.png"
+                    alt="Dish 1"
+                    className="rounded-full w-24 h-24 mx-auto transition-transform transform hover:scale-110"
+                  />
+                  <p className="mt-2 text-lg font-semibold hover:text-yellow-300">Spicy Burger</p>
+                </div>
 
-      {/* Featured Dishes Section */}
-      <div className=" hidden md:block bg-blue text-white px-4 md:px-8 -mt-20">
-        <div className="max-w-7xl mx-auto">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Dish Card 1 */}
-            <div className="  text-white p-4 rounded-lg  text-center bg-opacity-30 backdrop-blur-lg">
-              <img
-                src="/images/burgerbg.png"
-                alt="Dish 1"
-                className="rounded-full w-24 h-24 mx-auto"
-              />
-             
-              <p className="mt-2 text-lg font-semibold">Spicy Burger </p>
-              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
+                {/* Dish Card 2 */}
+                <div
+                  data-aos="fade-up"
+                  className="text-white p-4 rounded-lg text-center bg-opacity-5 transition-transform transform hover:scale-105 hover:bg-opacity-50"
+                >
+                  <img
+                    src="/images/pizza-hero.png"
+                    alt="Dish 2"
+                    className="rounded-full w-24 h-24 mx-auto transition-transform transform hover:scale-110"
+                  />
+                  <p className="mt-2 text-lg font-semibold hover:text-yellow-300">Italian Pizza</p>
+                </div>
+
+                {/* Dish Card 3 */}
+                <div
+                  data-aos="fade-left"
+                  className="text-white p-4 rounded-lg text-center transition-transform transform hover:scale-200 hover:bg-opacity-50"
+                >
+                  <img
+                    src="/images/steak.png"
+                    alt="Dish 3"
+                    className="rounded-full w-24 h-24 mx-auto transition-transform transform hover:scale-110"
+                  />
+                  <p className="mt-2 text-lg font-semibold hover:text-yellow-300">Turkish Steak</p>
+                </div>
+              </div>
             </div>
-            <div className="bg-opacity-5  text-white p-4 rounded-lg  text-center">
-              <img
-                src="/images/pizza-hero.png"
-                alt="Dish 1"
-                className="rounded-full w-24 h-24 mx-auto"
-              />
-             
-              <p className="mt-2 text-lg font-semibold">Italian Pizza</p>
-              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
-            </div>
-            <div className="  text-white p-4 rounded-lg  text-center">
-              <img
-                src="/images/steak.png"
-                alt="Dish 1"
-                className="rounded-full w-24 h-24 mx-auto"
-              />
-             
-              <p className="mt-2 text-lg font-semibold">Turkish Steak</p>
-              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
-            </div>
-            {/* Dish Card 2 */}
-            
-            {/* Additional Dish Cards can be added here */}
           </div>
+
         </div>
-      </div>
-    </div>
 
 
 
@@ -157,13 +161,13 @@ export default function Home() {
 
           <div className=" relative flex flex-col md:flex-row items-center ">
             {/* Left Section: Image */}
-              <div data-aos="zoom-out" className=" left-28 absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-20 ml-2"></div>
+            <div data-aos="zoom-out" className=" left-20 md:left-28 absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-20 ml-2"></div>
 
             <div className="w-full md:w-1/2 mb-10 md:mb-0 lg:pr" data-aos="zoom-in" data-aos-duration="500">
               <img
                 src="/images/friedbg.png"
                 alt="image"
-                className="w-3/5 md:w-4/5 rounded-lg mx-auto"
+                className="w-4/5 md:w-4/5 rounded-lg mx-auto"
               />
             </div>
 
@@ -208,7 +212,7 @@ export default function Home() {
         {/* category swiper */}
 
         <Categoryswiper />
-        <Sample/>
+        <Sample />
 
         {/* <TestimonialSection /> */}
 
@@ -228,7 +232,7 @@ export default function Home() {
 
           {/* Heading */}
           <h2 className="relative text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
-            About <span className="text-blue">Us</span> 
+            About <span className="text-blue">Us</span>
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-gray-300 mt-2"></span>
           </h2>
 
@@ -240,13 +244,19 @@ export default function Home() {
           {/* Description Text */}
           <div className="max-w-2xl" data-aos="fade-up" data-aos-delay="400">
             <p className="text-black mb-6">
-              Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable Virginia, looked up one
-              of the more obscure Latin words.
+              At Radish, we believe that dining is more than just enjoying a meal;
+              it’s an experience. Our commitment to using fresh, high-quality ingredients
+              ensures every dish delights your senses. With a menu that caters to a variety
+              of tastes and dietary needs, a cozy ambiance, and warm, attentive service,
+              Radish stands out as a place where customers feel at home. Choose us for
+              an exceptional culinary journey where quality meets comfort,
+              making every visit a memorable one.
             </p>
           </div>
 
+
           {/* Action Button */}
-          <button
+          {/* <button
             data-aos="fade-up"
             data-aos-delay="400"
             className="relative  rounded-full bg-blue isolation-auto z-10 border-2 border-gray-50
@@ -258,7 +268,7 @@ export default function Home() {
                                               disabled:opacity-50 disabled:pointer-events-none"
           >
             →
-          </button>
+          </button> */}
         </section>
 
       </div>

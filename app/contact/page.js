@@ -27,8 +27,8 @@ function Contact() {
         <div className="bg-blue text-white p-6 rounded-lg py-24 w-full md:w-1/3">
           <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
           <p className="text-sm mb-6">We’ll create high-quality linkable content and build at least 40 high-authority links.</p>
-          <ul>
-            <li className="flex items-center mb-4">
+          <ul className='font-mono'>
+            <li className="flex items-center mb-4 ">
               <a href="tel:+917034558800" className="hover:text-orange-500  items-center justify-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 7034558800
               </a>
@@ -65,6 +65,17 @@ function Contact() {
           </form>
         </div>
       </div>
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-white border-2 border-gray-50 shadow-lg 
+      inline-flex items-center justify-center w-12 h-12 text-white text-2xl font-bold transition-transform duration-300
+      transform hover:scale-110 hover:shadow-2xl hover:text-blue hover:boder-2 hover:border-blue"
+        aria-label="Scroll to top"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+        </svg>
+      </button>
 <Footer/>
 
     </>

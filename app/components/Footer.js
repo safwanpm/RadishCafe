@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Follow Us Section */}
         <div className='text-center'>
         <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
-          <ul className="space-y-2 text-center">
+          <ul className="space-y-2 text-center font-mono">
             <li>
               <a href="/" className="text-sm lg:text-lg hover:text-gray-300  items-center">
                 Home
@@ -56,22 +56,22 @@ const Footer = () => {
 
 
         {/* Contact Info Section */}
-        <div className='text'>
+        <div className='text-center md:text-left'>
           <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
-          <ul className="space-y-2 text-sm lg:text-lg">
+          <ul className="space-y-2 text-sm lg:text-lg font-mono">
             <li>
               <a href="tel:+917034558800" className="hover:text-gray-300  items-center justify-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 7034558800
               </a>
             </li>
             <li>
-              <a href="communityradish@gmail.com" className="font hover:text-gray-300 flex items-center justify">
+              <a href="communityradish@gmail.com" className="font hover:text-gray-300  items-center justify-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> communityradish@gmail.com
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-gray-300 flex items justify">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Near Co-operative Hospital,
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-0 md:mr-4" /> Near Co-operative Hospital,
                  Manna, Thaliparamba, Kannur, Kerala, 670141
               </a>
             </li>

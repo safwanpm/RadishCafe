@@ -47,7 +47,7 @@ const About = () => {
           </div>
 
           {/* Text Section */}
-          <div className="w-full h-full md:w-1/2 px-4 sm:px-6 lg:px-10" data-aos="fade-up">
+          <div className="w-full h-full md:w-1/2 px-4 sm:px-6 lg:px-10 text-black" data-aos="fade-up">
   <h2 className="text-2xl md:text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
     About <span className="text-blue">Radish</span>
     <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-10 bg-gray-300 mt-2"></span>
@@ -67,7 +67,7 @@ const About = () => {
 
 
 
-      <div className="flex flex-col items-center justify-center bg py-8 ">
+      <div className="flex flex-col items-center justify-center bg py-8 overflow-hidden">
         <h2 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
           Our <span className='text-blue'>Journey</span>
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-gray-300 mt-2"></span>
@@ -142,9 +142,9 @@ const About = () => {
       </div >
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-orangecolor border-2 border-gray-50 shadow-lg 
+        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-white border-2 border-gray-50 shadow-lg 
       inline-flex items-center justify-center w-12 h-12 text-white text-2xl font-bold transition-transform duration-300
-      transform hover:scale-110 hover:shadow-2xl hover:text-white"
+      transform hover:scale-110 hover:shadow-2xl hover:text-blue hover:boder-2 hover:border-blue"
         aria-label="Scroll to top"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
