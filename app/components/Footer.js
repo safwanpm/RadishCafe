@@ -19,6 +19,9 @@ const Footer = () => {
           <img src='./images/radishWhite (1).png' alt='logo' className='mb-4' />
           <h1>RADISH</h1>
           <p>GRILL & CAFE</p>
+          <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify">
+                <FontAwesomeIcon icon={faInstagram} className="mr-2" /> radish india
+              </a>
         </div>
 
 
@@ -26,6 +29,11 @@ const Footer = () => {
         <div className='text-center'>
         <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-center">
+            <li>
+              <a href="/" className="text-sm lg:text-lg hover:text-gray-300  items-center">
+                Home
+              </a>
+            </li>
             <li>
               <a href="/about" className="text-sm lg:text-lg hover:text-gray-300  items-center">
                 About
@@ -48,28 +56,27 @@ const Footer = () => {
 
 
         {/* Contact Info Section */}
-        <div className='text-center'>
+        <div className='text'>
           <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
           <ul className="space-y-2 text-sm lg:text-lg">
             <li>
-              <a href="tel:+919847062630" className="hover:text-gray-300  items-center justify-center">
-                <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 98470 62630
+              <a href="tel:+917034558800" className="hover:text-gray-300  items-center justify-center">
+                <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 7034558800
               </a>
             </li>
             <li>
-              <a href="mailto:info@s2a.co.in" className="hover:text-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@s2a.co.in
+              <a href="communityradish@gmail.com" className="font hover:text-gray-300 flex items-center justify">
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> communityradish@gmail.com
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Techno Industrial Park, Thaliparamba
+              <a href="#" className="hover:text-gray-300 flex items justify">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Near Co-operative Hospital,
+                 Manna, Thaliparamba, Kannur, Kerala, 670141
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faInstagram} className="mr-2" /> radish india
-              </a>
+              
             </li>
           </ul>
         </div>

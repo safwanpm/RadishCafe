@@ -29,18 +29,19 @@ function Contact() {
           <p className="text-sm mb-6">We’ll create high-quality linkable content and build at least 40 high-authority links.</p>
           <ul>
             <li className="flex items-center mb-4">
-              <a href="tel:+919847062630" className="hover:text-orange-500  items-center justify-center">
-                <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 98470 62630
+              <a href="tel:+917034558800" className="hover:text-orange-500  items-center justify-center">
+                <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 7034558800
               </a>
             </li>
             <li className="flex items-center mb-4">
-              <a href="mailto:info@s2a.co.in" className="hover:text-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@s2a.co.in
+              <a href="communityradish@gmail.com" className="hover:text-gray-300 flex items-center justify-center">
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> communityradish@gmail.com
               </a>
             </li>
             <li className="flex items-center">
               <a href="#" className="hover:text-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Techno Industrial Park, Thaliparamba
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Near Co-operative Hospital,
+                Manna, Thaliparamba, Kannur, Kerala, 670141
               </a>
             </li>
           </ul>

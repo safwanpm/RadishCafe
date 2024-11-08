@@ -55,7 +55,7 @@ export default function Home() {
 
         <div>
       {/* Hero Section */}
-      <div className="py-4 lg:py-12 px-4 md:px-8 bg-blue text-white">
+      <div className="py-4 lg:py-6 px-4 md:px-8 bg-blue text-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
           {/* Text Content */}
           <div className="lg:w-1/2 ms-12 lg:ms-16" data-aos="fade-right" data-aos-delay="200">
@@ -80,51 +80,49 @@ export default function Home() {
             className="relative w-full lg:w-1/2 lg:mt-0 flex justify-center"
             data-aos-delay="200"
           >
-            <img src="/images/friedbg.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-full h-auto" />
+            <img src="/images/pizza-heo.png" alt="Top Products" data-aos="slide-up" className="relative w-3/4 md:w-4/4 h-auto" />
           </div>
         </div>
       </div>
 
       {/* Featured Dishes Section */}
-      <div className="bg-blue text-white py-8 px-4 md:px-8">
+      <div className=" hidden md:block bg-blue text-white px-4 md:px-8 -mt-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-            Featured Dishes
-          </h2>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Dish Card 1 */}
-            <div className="bg-opacity-5  text-white p-4 rounded-lg shadow-lg text-center">
+            <div className="  text-white p-4 rounded-lg  text-center bg-opacity-30 backdrop-blur-lg">
               <img
-                src="https://via.placeholder.com/150"
+                src="/images/burgerbg.png"
                 alt="Dish 1"
                 className="rounded-full w-24 h-24 mx-auto"
               />
-              <div className="text-orange-500 mt-2">★★★★★</div>
-              <p className="mt-2 text-lg font-semibold">$20</p>
-              <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p>
+             
+              <p className="mt-2 text-lg font-semibold">Spicy Burger </p>
+              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
+            </div>
+            <div className="bg-opacity-5  text-white p-4 rounded-lg  text-center">
+              <img
+                src="/images/pizza-hero.png"
+                alt="Dish 1"
+                className="rounded-full w-24 h-24 mx-auto"
+              />
+             
+              <p className="mt-2 text-lg font-semibold">Italian Pizza</p>
+              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
+            </div>
+            <div className="  text-white p-4 rounded-lg  text-center">
+              <img
+                src="/images/steak.png"
+                alt="Dish 1"
+                className="rounded-full w-24 h-24 mx-auto"
+              />
+             
+              <p className="mt-2 text-lg font-semibold">Turkish Steak</p>
+              {/* <p className="text-sm text-gray-600">Special Roasted Fish with Olive Salad</p> */}
             </div>
             {/* Dish Card 2 */}
-            <div className="bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Dish 2"
-                className="rounded-full w-24 h-24 mx-auto"
-              />
-              <div className="text-orange-500 mt-2">★★★★★</div>
-              <p className="mt-2 text-lg font-semibold">$25</p>
-              <p className="text-sm text-gray-600">Spaghetti Carbonara with Bacon</p>
-            </div>
-            {/* Dish Card 3 */}
-            <div className="bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Dish 3"
-                className="rounded-full w-24 h-24 mx-auto"
-              />
-              <div className="text-orange-500 mt-2">★★★★★</div>
-              <p className="mt-2 text-lg font-semibold">$35</p>
-              <p className="text-sm text-gray-600">Honey Sauce Roasted Chicken</p>
-            </div>
+            
             {/* Additional Dish Cards can be added here */}
           </div>
         </div>
@@ -149,7 +147,7 @@ export default function Home() {
 
 
 
-        <div className="relative text-blue py-16 px-6 md:px-16 lg:px-32 text-center md:text-left" id="about">
+        <div className=" relative text-blue py-24 px-6 md:px-16 lg:px-32 text-center md:text-left" id="about">
           {/* Decorative Image */}
           {/* <img
             src="/images/right3.png"
@@ -159,13 +157,13 @@ export default function Home() {
 
           <div className=" relative flex flex-col md:flex-row items-center ">
             {/* Left Section: Image */}
-              <div data-aos="zoom-out" className="absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-28"></div>
+              <div data-aos="zoom-out" className=" left-28 absolute w-48 h-48 lg:w-80 lg:h-80 bg-green-100 rounded-full mt-10 lg:mt-20 ml-2"></div>
 
-            <div className="w-full md:w-1/2 mb-10 md:mb-0 lg:pr-10" data-aos="zoom-in" data-aos-duration="500">
+            <div className="w-full md:w-1/2 mb-10 md:mb-0 lg:pr" data-aos="zoom-in" data-aos-duration="500">
               <img
-                src="/images/pizza.png"
+                src="/images/friedbg.png"
                 alt="image"
-                className="w-3/5 md:w-5/5 rounded-lg mx-auto"
+                className="w-3/5 md:w-4/5 rounded-lg mx-auto"
               />
             </div>
 
@@ -191,7 +189,7 @@ export default function Home() {
                   data-aos-delay="400"
                   className="relative  bg-blue isolation-auto z-10 border-2 border-gray-50
                                          before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white
-                                          before:-right-full before:hover:right-0 before:rounded-full before:bg-orange-500 before:-z-10
+                                          before:-right-full before:hover:right-0 before:rounded-full before:bg-gray-400 before:-z-10
                                            before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
                                             inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-white
                                               shadow-sm gap-x-2 hover:bg-gray-50
@@ -229,8 +227,8 @@ export default function Home() {
           /> */}
 
           {/* Heading */}
-          <h2 className="relative text-4xl font-bold mb-6 text-blue inline-block pb-2" data-aos="fade-down">
-            About Us
+          <h2 className="relative text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
+            About <span className="text-blue">Us</span> 
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-gray-300 mt-2"></span>
           </h2>
 
@@ -271,9 +269,9 @@ export default function Home() {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-orangecolor border-2 border-gray-50 shadow-lg 
+        className="fixed bottom-8 right-8 z-10 rounded-full bg-blue hover:bg-white border-2 border-gray-50 shadow-lg 
       inline-flex items-center justify-center w-12 h-12 text-white text-2xl font-bold transition-transform duration-300
-      transform hover:scale-110 hover:shadow-2xl hover:text-white"
+      transform hover:scale-110 hover:shadow-2xl hover:text-blue hover:boder-2 hover:border-blue"
         aria-label="Scroll to top"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

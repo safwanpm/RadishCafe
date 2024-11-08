@@ -16,7 +16,7 @@ const slides = [
 export default function Categoryswiper() {
   return (
     <section>
-      <div className="relative text-center px-4 py-16 lg:py-16">
+      <div className="relative text-center px-4 md:px-20 py-16 lg:py-16">
         <h2 className="text-2xl md:text-4xl font-bold mb-6 text-black inline-block pb-2" data-aos="fade-down">
           Discover Our <span className="text-blue">Beverages</span>
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-gray-300 mt-2"></span>
