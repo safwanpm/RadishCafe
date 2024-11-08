@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* Featured Dishes Section */}
-          <div className="hidden md:block bg-blue text-white px-4 md:px-8 -mt-20">
+          <div className="hidden lg:block bg-blue text-white px-4 md:px-8 -mt-20">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Dish Card 1 */}

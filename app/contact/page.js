@@ -26,13 +26,18 @@ function Contact() {
         {/* Left: Contact Information */}
         <div className="bg-blue text-white p-6 rounded-lg py-24 w-full md:w-1/3">
           <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
-          <p className="text-sm mb-6">We’ll create high-quality linkable content and build at least 40 high-authority links.</p>
+          <p className="text-sm mb-6">We'll serve up unforgettable flavors and ambiance, bringing you quality ingredients and an experience worth sharing</p>
           <ul className='font-mono'>
             <li className="flex items-center mb-4 ">
               <a href="tel:+917034558800" className="hover:text-orange-500  items-center justify-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" /> +91 7034558800
               </a>
             </li>
+            <li className="flex items-center mb-4 ">
+            <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify-center">
+                <FontAwesomeIcon icon={faInstagram} className="mr-2" /> radish india
+              </a>
+              </li>
             <li className="flex items-center mb-4">
               <a href="communityradish@gmail.com" className="hover:text-gray-300 flex items-center justify-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> communityradish@gmail.com
@@ -51,8 +56,7 @@ function Contact() {
         <div className="bg-white w-full md:w-2/3 p-6 rounded-lg">
           <h2 className="text-2xl font-semibold text-center md:text-left">Get In Touch</h2>
           <p className="text-center md:text-left text-gray-500 mb-6">
-            We’ll create high-quality linkable content and build at least 40 high-authority links.
-          </p>
+          Crafted with care, served with passion. </p>
 
           <form className="space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
