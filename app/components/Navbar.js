@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           {isHomePage ? (
             <a href="/" className="flex items-center" data-aos="fade-down">
-              <img src="./images/bg Green.png" alt="Icon" className="w-56 h-16" />
+              <img src="./images/Radish bg.png" alt="Icon" className="w-56 h-16" />
             </a>
           ) : (
             <a href="/" className="flex items-center" data-aos="fade-down">
