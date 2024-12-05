@@ -34,10 +34,10 @@ function Contact() {
               </a>
             </li>
             <li className="flex items-center mb-4 ">
-            <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify-center">
+              <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify-center">
                 <FontAwesomeIcon icon={faInstagram} className="mr-2" /> radish india
               </a>
-              </li>
+            </li>
             <li className="flex items-center mb-4">
               <a href="communityradish@gmail.com" className="hover:text-gray-300 flex items-center justify-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> communityradish@gmail.com
@@ -56,7 +56,7 @@ function Contact() {
         <div className="bg-white w-full md:w-2/3 p-6 rounded-lg">
           <h2 className="text-2xl font-semibold text-center md:text-left">Get In Touch</h2>
           <p className="text-center md:text-left text-gray-500 mb-6">
-          Crafted with care, served with passion. </p>
+            Crafted with care, served with passion. </p>
 
           <form className="space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
@@ -80,7 +80,7 @@ function Contact() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
         </svg>
       </button>
-<Footer/>
+      <Footer />
 
     </>
   )

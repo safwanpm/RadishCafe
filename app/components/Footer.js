@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+import UseAnimations from "react-useanimations";
+import instagram from 'react-useanimations/lib/instagram';
+
 const Footer = () => {
   return (
     <footer className="text-white py-10 pt-16 px-8 lg:px-28 relative bg-blue">
@@ -19,6 +22,7 @@ const Footer = () => {
           <img src='./images/radishWhite (1).png' alt='logo' className='mb-4' />
           <h1>RADISH</h1>
           <p>GRILL & CAFE</p>
+         
           <a href="https://www.instagram.com/radish_india/profilecard/?igsh=N2tjZ3UyeGpvcTY0" className="hover:text-gray-300 flex items-center justify">
                 <FontAwesomeIcon icon={faInstagram} className="mr-2" /> radish india
               </a>

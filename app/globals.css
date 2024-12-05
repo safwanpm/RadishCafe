@@ -27,12 +27,7 @@ html {
 }
 
 /* Dark mode specific styles */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: url('/images/body-bg.jpg'); /* Optional: Different background for dark mode */
-    --foreground: #ededed;
-  }
-}
+
 
 /* Body styles with Nexa font family */
 body {
